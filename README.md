@@ -6,7 +6,7 @@ Thursday, 6th July 2017
 Authors : Manas Gupta, Shreesh Keskar
 
 
-The source code of this program is provided with the application in the main folder.
+The source code of this program is provided with the application in the src folder. Run it with any editor that supports .java files.
 ------------------------
 INSTRUCTIONS:
 ------------------------------------
