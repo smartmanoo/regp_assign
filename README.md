@@ -9,7 +9,7 @@ Authors : Manas Gupta, Shreesh Keskar
 Min Version JSE 1.6
 
 
-The source code of this program is provided with the application in the src folder. Run it with any editor that supports .java files.
+The source code of this program is provided with the application in the src folder. Run it with any editor that supports .java files. Otherwise, the jar file can be directly executed by double clicking.
 ------------------------
 INSTRUCTIONS:
 ------------------------------------
