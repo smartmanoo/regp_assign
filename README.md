@@ -4,6 +4,7 @@ Automatically assigns regp tickets
 Thursday, 6th July 2017
 
 Authors : Manas Gupta, Shreesh Keskar
+Min Version JSE 1.6
 
 
 The source code of this program is provided with the application in the src folder. Run it with any editor that supports .java files.
