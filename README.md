@@ -56,3 +56,5 @@ If this still doesn't work, try deleting assign.csv and then running the program
 3)Too many active users in output file:
 The program takes the active users from the file users.csv. Ensure that file is updated with the active users.
 
+4)Keep getting deleting as the output:
+This means that assign.csv is open. Close the file and then click on ok.
