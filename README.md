@@ -54,6 +54,7 @@ Go to a browser and type http://localhost/phpmyadmin/ in the address bar. Check 
 
 2)Apache not working:
 This might happen with computers running Skype becasue Skype uses the default 80 port. To resolve this go through the followng steps:
+
 1. Go in xampp/apache/conf/httpd.conf and open it. 
 In the httpd.conf file at line 176 Replace
 
@@ -61,6 +62,7 @@ ServerName localhost:80
 with
 ServerName localhost:81 
 It will work.
+
 2. Even if the above procedure doesn't work. Then in the same file (httpd.conf) at line 45 replace
 
    #Listen 0.0.0.0:80
