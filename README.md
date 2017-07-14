@@ -46,15 +46,40 @@ DEBUGGING:
 ------------------------------------
 
 1)Error with server:
-Check if server is up by going to a browser and typing http://localhost/phpmyadmin/ in the address bar. If it isn't restart XAMPP control panel and 
-ensure apache,MYSql and tomcat are all started.
+This mostly happens due to 2 reasons
+I:Server not set up
+Check if MySql and Apache are both started in the XAMPP control panel. If Apache isn't and it doesnt start, skip to the section     dealing with "Apache not working". If MySql does not start, you probably have an installation problem with XAMPP. Try installing it  again.
+II:Database not set up
+Go to a browser and type http://localhost/phpmyadmin/ in the address bar. Check if the tata database is created from the left window pane. If it isn't, create it using the new button in the same pane.
 
-2)Cannot find file:
+2)Apache not working:
+This might happen with computers running Skype becasue Skype uses the default 80 port. To resolve this go through the followng steps:
+1. Go in xampp/apache/conf/httpd.conf and open it. 
+In the httpd.conf file at line 176 Replace
+
+ServerName localhost:80 
+with
+ServerName localhost:81 
+It will work.
+2. Even if the above procedure doesn't work. Then in the same file (httpd.conf) at line 45 replace
+
+   #Listen 0.0.0.0:80
+   #Listen [::]:80
+   Listen 80 
+with
+
+  #Listen 0.0.0.0:81
+  #Listen [::]:81
+  Listen 81
+  
+Now, the server can be accessed by typing http://localhost:81/phpmyadmin/ in the address bar. Keep in mind that after doing this step, http://localhost/phpmyadmin/ WILL NOT WORK.
+
+3)Cannot find file:
 Ensure that all the csv and excel files are in the Regp_Assignment/Regp_Assignment folder and they are all closed before the program is run, especially assign.csv.
 If this still doesn't work, try deleting assign.csv and then running the program.
 
-3)Too many active users in output file:
+4)Too many active users in output file:
 The program takes the active users from the file users.csv. Ensure that file is updated with the active users.
 
-4)Keep getting deleting as the output:
+5)Keep getting deleting as the output:
 This means that assign.csv is open. Close the file and then click on ok.
